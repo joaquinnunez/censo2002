@@ -1,0 +1,11 @@
+Censo 2002
+----------
+
+Este script descarga y extrae los datos del censo de Chile del año 2002 desde la página http://datos.gob.cl/datasets/ver/4117
+
+El script descarga aproxidamente 2.1G de datos
+
+Con los datos descargados, puedes usar R para leerlos::
+
+    library(foreign)
+    persona.sav <- read.spss("persona.sav", to.data.frame=TRUE)
